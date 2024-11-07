@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const currentElement = document.querySelector('#level')
-  let level = 0
+  let currentElement = document.querySelector('#level'); // Use `let` to allow reassignment
+  let level = 0;
   while (currentElement) {
-    level++
-    currentElement = currentElement.parentElement
+    level++;
+    currentElement = currentElement.parentElement; // Reassign the `currentElement` to its parent
   }
 
-  alert(`The level of the element is: ${level}`)
-})
+  alert(`The level of the element is: ${level}`);
+});
