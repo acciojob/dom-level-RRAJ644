@@ -5,4 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     level++
     currentElement = currentElement.parentElement
   }
+
+  alert(`The level of the element is: ${level}`)
 })
